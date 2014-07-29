@@ -1,0 +1,85 @@
+.o 目标文件，相当于windows的obj文件
+.so 共享库（shared object），用于动态连接，和dll差不多
+.a 静态库，好多个.o合在一起，用于静态连接
+
+c语言
+static修饰变量：（1）局部变量：存储在全局静态区，作用域在函数；（2）全局变量：存储在全局静态区，作用域在当前文件，不能被其它地方extern.注：全局变量默认的作用域是整个文件
+static 修饰函数：作用域在当前文件，不能被其它文件引用，但函数默认是extern的。
+
+vs:当某个函数没有时，默认认为它返回int的函数类型。见例子
+#include <stdio.h>
+//#include "test.h"
+//void ttt(int i);
+static void t1()
+{
+	printf("test2 t1\n");
+	ttt(2);
+}
+void ttt(int i)
+{
+	printf("test2 ttt\n");
+}
+error C2371: “ttt”: 重定义；不同的基类型
+warning C4013: “ttt”未定义；假设外部返回 int
+
+
+今年夏天必读的10本商业书
+http://www.botanwang.com/node/25749
+如果你从成功商业人士身上学到有用职业建议，那么下面这十本书你今年夏天绝不能错过。这十本书既有价值但又不枯燥，绝对是你夏天居家旅行，消暑休息时的必备读物。
+
+这里有大佬Michael Lewis的新书《闪电小子》（Flash Boys ），有励志讲座合集《学TED说话》（Talk Like TED），还有推特联合创始人Biz Stone的新书《像小鸟一样对我说话》。
+
+1.《天才总动员：引领创新的艺术和实践》（Collective Genius：The Art and Practice of Leading Innovation）
+
+Linda A.Hill，Greg Brandeau，Emily Truelove和Kent Linebac这几位作者告诉你，对于大众、谷歌、eBay和辉瑞这些公司的领袖，创新并不是他们的负担。
+
+2.《秀工作》（Show Your Work）
+
+Austin Kleon的口袋书教你如何打造个人品牌，作者用艺术家的名言、图片、图表解释了为什么在工作中分享你的创意，比成为天才更重要。
+
+3.《年轻就是钱：后危机时代华尔街招聘内幕》
+
+财经作家Kevin Roose耗时3年，揭示了高盛、美银美林等投行最低的8个层级员工生活状态。
+
+4.《超级生存者：成功和挫折之间惊人的联系》
+
+作者David B.Feldman和Lee Daniel Kravetz讲述了那些战胜巨大挫折获得成功的故事。比如盲人划船跨越大西洋，一名卢旺达大屠杀幸存妇女如何最终得到奥巴马的提名。
+
+5.《美女老板》（#GIRLBOSS）
+
+美女老板Sophia Amoruso把她自己的网店Nasty Gal，做成了一个价值1亿美元的大生意。
+
+Sophia Amoruso在这本书中全盘说出了自己的创业故事。
+
+6.《闪电小子：华尔街快枪手》（Flash Boys：A Wall Street Revolt）
+
+Michael Lewis的新书抨击华尔街利用高频交易等不公平的优势，打败普通投资者。
+
+这本书不但造成了华尔街地震，还让监管层开始关注高频交易。
+
+7.《学TED说话：全球最顶尖人物9个演讲秘密》
+
+无论你来自什么行业，TED演讲无疑最值得一看的全球最顶尖演讲。
+
+这本书总结了TED演讲成功的秘密，让你学会和那些大佬一样能让听众听你的演讲听到“下巴掉下来”。
+
+8.《资本主义在21世纪》（Capital in the Twenty-First Century）
+
+法国经济学家Thomas Piketty这本700页的经济学读物，充满大量数据和图表，但登上了《纽约时报》畅销书榜单头名。
+
+法国人Thomas Piketty断言资本主义没能提升整体福利，目前欧洲和美国不平等正在加剧。
+
+自3月份这本书英文版上市以来，各方对于Thomas Piketty资本主义加剧不平等的辩论就没有停止过。
+
+9.《像小鸟一样对我说：创新思维的自我表白》（Things a Little Bird Told Me：Confessions of the Creative Mind）
+
+本书作者Biz Stone是Twitter联合创始人、现在是初创公司Jelly的CEO，他分享了自己创业历史中起起伏伏。
+
+这本书极富有个人色彩，有趣，对所有创业者都有帮助。
+
+10.《工业化革命2.0：聪明技术时代的工作、发展和繁荣》（The Second Machine Age：Work，Progress，and Prosperity in a Time of Brilliant Technologies）
+
+MIT两位学者Erik Brynjolfsson 和Andrew McAfee解释了数字技术正如何改变社会，这对人类未来意味着什么。
+
+摩根大通把这本书列为夏季必读书目，称“对于有前瞻眼光的企业高管，这本书不容错过。”
+
